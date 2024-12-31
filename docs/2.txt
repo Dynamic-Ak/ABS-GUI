@@ -1,0 +1,9 @@
+The name Tkinter comes from Tk interface. Tkinter was written by Fredrik Lundh.
+
+# Tkinter Widgets
+    There are currently 15 types of widgets in Tkinter. 
+    We present these widgets as well as a    brief description in the following table.
+
+     1.Button  2.Canvas  3.Checkbutton  4.Entry  5.Frame        6.Label  7.Listbox  8.Menubutton  9.Menu  10.Message
+11.Radiobutton  12.Scale  13.Scrollbar  14.Text 15.Toplevel  16.Spinbox  17.PanedWindow 
+18.LabelFrame  19.tkMessageBox

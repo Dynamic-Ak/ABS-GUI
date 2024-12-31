@@ -1,0 +1,13 @@
+#TO RUN PROGRAM (main.py)
+
+*REQUIRED MODULES AND LIBRARIES IN PYTHON
+
+1. OS	     ( Inbuilt with python)
+2. PYGAME  (pip install pygame)
+3. TKINTER  (pip install tk)
+4. RANDOM  (pip install random2)
+5. PIL 	     (pip install pillow)
+
+#Note: Run pip's in CMD or in powershell .
+
+*** Also download required font.

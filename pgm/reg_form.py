@@ -1,0 +1,72 @@
+
+from tkinter import *
+def getvals():
+    print(f"The value of Username is {firstnamevalue.get()}")
+    print(f"The value of Firtsname is {lastnamevalue.get()}")
+    print(f"The value of City is {cityvalue.get()}")
+    print(f"The value of State is {statevalue.get()}")
+    print(f"The value of Mobile is {mobilevalue.get()}")
+    print(f"The value of Email is {emailvalue.get()}")
+#Creating the code for the working of the 'Reset' button
+def Reset():
+    firstnamevalue.set("")
+    lastnamevalue.set("") 
+    cityvalue.set("")
+    statevalue.set("") 
+    mobilevalue.set(0)
+    emailvalue.set("") 
+
+#Creating the code for the working of the 'Quit' button
+def Quit():
+    root.destroy()
+root = Tk()
+root.geometry("950x350")
+root.title("REGISTRATION FORM")
+root.configure(bg="light blue", borderwidth=5,  highlightthickness=5, highlightcolor="blue")
+root.wm_iconbitmap("docs\\6.ico")
+
+head = Label(root, text="DANCE INDIA DANCE", bg="white", fg="orange", font="tahoma 25 bold", borderwidth=5, relief=RIDGE)
+head.grid(row=0,columnspan=14,padx=10,pady=10)
+firstname = Label(root, text="First Name", bg="white", fg="black", font="cosmicsans 15 bold", borderwidth=5, relief=RIDGE)
+firstname.grid(row=1,column=0,padx=10,pady=10)
+lastname = Label(root, text="Last Name",bg="white", fg="black", font="cosmicsans 15 bold", borderwidth=5, relief=RIDGE)
+lastname.grid(row=1,column=3, padx=10,pady=10)
+city = Label(root, text="City",bg="white", fg="black", font="cosmicsans 15 bold", borderwidth=5, relief=RIDGE)
+city.grid(row=2,column=0, padx=10,pady=10)
+state = Label(root, text="State",bg="white", fg="black", font="cosmicsans 15 bold", borderwidth=5, relief=RIDGE)
+state.grid(row=2,column=3, padx=10,pady=10)
+mobile = Label(root, text="Mobile NO.",bg="white", fg="black", font="cosmicsans 15 bold", borderwidth=5, relief=RIDGE)
+mobile.grid(row=3,column=0, padx=10,pady=10)
+email = Label(root, text="E-Mail",bg="white", fg="black", font="cosmicsans 15 bold", borderwidth=5, relief=RIDGE)
+email.grid(row=3,column=3, padx=10,pady=10)
+submit= Button(root, text="Submit", command=getvals, bg="orange", fg="black", font="cosmicsans 15 bold", borderwidth=5, relief=RIDGE)
+submit.grid(row=4,column=1, padx=10,pady=10)
+reset= Button(root, text="Reset", command=Reset, bg="coral", fg="black", font="cosmicsans 15 bold", borderwidth=5, relief=RIDGE)
+reset.grid(row=4,column=2, padx=10,pady=10)
+quit= Button(root, text="Quit", command=Quit, bg="purple", fg="black", font="cosmicsans 15 bold", borderwidth=5, relief=RIDGE)
+quit.grid(row=4,column=3, padx=10,pady=10)
+next= Button(root, text="Next", bg="yellow", fg="black", font="cosmicsans 15 bold", borderwidth=5, relief=RIDGE)
+next.grid(row=4,column=4, padx=10,pady=10)
+
+#variable classes in tkinter
+#BooleanVar, Stringvar, DoubleVar, Intvar
+firstnamevalue = StringVar()
+lastnamevalue = StringVar()
+cityvalue = StringVar()
+statevalue = StringVar()
+mobilevalue = IntVar()
+emailvalue = StringVar()
+firstnameentry = Entry(root, textvariable=firstnamevalue,bg="white", fg="black", font="cosmicsans 15 bold", borderwidth=5, relief=RIDGE)
+lastnameentry = Entry(root, textvariable=lastnamevalue,bg="white", fg="black", font="cosmicsans 15 bold", borderwidth=5, relief=RIDGE)
+cityentry = Entry(root, textvariable=cityvalue,bg="white", fg="black", font="cosmicsans 15 bold", borderwidth=5, relief=RIDGE)
+stateentry = Entry(root, textvariable=statevalue,bg="white", fg="black", font="cosmicsans 15 bold", borderwidth=5, relief=RIDGE)
+mobileentry = Entry(root, textvariable=mobilevalue,bg="white", fg="black", font="cosmicsans 15 bold", borderwidth=5, relief=RIDGE)
+emailentry = Entry(root, textvariable=emailvalue,bg="white", fg="black", font="cosmicsans 15 bold", borderwidth=5, relief=RIDGE)
+firstnameentry.grid(row=1,column=1,padx=10,pady=10)
+lastnameentry.grid(row=1,column=4,padx=10,pady=10)
+cityentry.grid(row=2,column=1,padx=10,pady=10)
+stateentry.grid(row=2,column=4,padx=10,pady=10)
+mobileentry.grid(row=3,column=1,padx=10,pady=10)
+emailentry.grid(row=3,column=4,padx=10,pady=10) 
+
+root.mainloop()

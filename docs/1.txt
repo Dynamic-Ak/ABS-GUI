@@ -1,0 +1,9 @@
+Developing guis(graphical user interfaces) through python Python provides various options for            developing graphical user interfaces (GUIs). Most important are listed below.
+
+Tkinter :        Tkinter is the Python interface to the Tk GUI toolkit shipped with Python.
+
+wxPython :              This is an open-source Python interface for wxWindows.
+
+JPython : 
+JPython is a Python port for Java which gives Python scripts seamless access to Java class libraries on local machines .
+            Tkinter is a Python binding to the Tk GUI toolkit. It is the standard Python interface to the Tk GUI toolkit, &  is Python's de facto standard GUI.Tkinter is included with standard Linux, Microsoft   Windows and   Mac OS X installs of Python.
